@@ -1,0 +1,10 @@
+# Cloudflare Pages Redirects 設定
+
+# SPA 路由支援 - 將所有未找到的路由重定向到對應的 HTML 檔案
+/about /about.html 200
+/network /network.html 200
+/peering /peering.html 200
+/resources /resources.html 200
+
+# 404 處理
+/* /404.html 404

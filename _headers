@@ -1,0 +1,38 @@
+# Cloudflare Pages Headers 設定
+
+/*
+  # 啟用 GZIP 壓縮
+  Content-Encoding: gzip
+  
+  # 設定快取控制
+  Cache-Control: public, max-age=31536000, immutable
+
+/_next/static/*
+  # 靜態資源長期快取
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.css
+  # CSS 檔案快取
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.js
+  # JavaScript 檔案快取
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.png
+/*.jpg
+/*.jpeg
+/*.gif
+/*.webp
+/*.svg
+/*.ico
+  # 圖片檔案快取
+  Cache-Control: public, max-age=31536000, immutable
+
+/
+  # 首頁較短快取時間
+  Cache-Control: public, max-age=0, must-revalidate
+
+/*.html
+  # HTML 檔案較短快取時間
+  Cache-Control: public, max-age=0, must-revalidate
