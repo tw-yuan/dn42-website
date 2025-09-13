@@ -1,0 +1,96 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Source code
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.html text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.sass text eol=lf
+*.less text eol=lf
+*.vue text eol=lf
+*.php text eol=lf
+*.py text eol=lf
+*.rb text eol=lf
+*.go text eol=lf
+*.java text eol=lf
+*.c text eol=lf
+*.cpp text eol=lf
+*.h text eol=lf
+*.hpp text eol=lf
+
+# Configuration files
+*.xml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+*.cfg text eol=lf
+*.conf text eol=lf
+*.config text eol=lf
+
+# Documentation
+*.md text eol=lf
+*.txt text eol=lf
+*.rst text eol=lf
+
+# Shell scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+*.fish text eol=lf
+
+# Windows batch files
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg binary
+*.webp binary
+*.pdf binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.7z binary
+*.rar binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+*.otf binary
+
+# Video files
+*.mp4 binary
+*.mov binary
+*.avi binary
+*.mkv binary
+*.wmv binary
+*.flv binary
+
+# Audio files
+*.mp3 binary
+*.wav binary
+*.flac binary
+*.aac binary
+*.ogg binary
+
+# Archives
+*.tar.gz binary
+*.tar.bz2 binary
+*.tar.xz binary
+
+# Fonts are handled above in binary files section
+
+# Lock files should not have diffs shown
+package-lock.json -diff
+yarn.lock -diff
+pnpm-lock.yaml -diff
